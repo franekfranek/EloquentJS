@@ -5,14 +5,22 @@ VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{624F338A-6EFD-44B5-874C-2251E777D598}"
 	ProjectSection(SolutionItems) = preProject
+		data_structures_oa.js = data_structures_oa.js
 		functions.js = functions.js
+		higher_order_functions.js = higher_order_functions.js
 		index.html = index.html
 		program_structure.js = program_structure.js
+		secret_life_of_objects.js = secret_life_of_objects.js
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tricky_JS_Questions", "Tricky_JS_Questions", "{576886A0-A30E-4086-AA96-F56329E639EF}"
 	ProjectSection(SolutionItems) = preProject
 		tricky.js = tricky.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceVSvalue", "ReferenceVSvalue", "{279760B1-30DB-4B7B-A5D4-681DD399B67E}"
+	ProjectSection(SolutionItems) = preProject
+		deep_shallow_copy.js = deep_shallow_copy.js
 	EndProjectSection
 EndProject
 Global
