@@ -1,0 +1,124 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DE4BCB8-433D-4FA2-8270-C18F37B5EA4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>EloquentJSv2</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="Exercises\asynchronous_programming.js" />
+    <Content Include="Exercises\bugs_and_errors.js" />
+    <Content Include="Exercises\data_structures_oa.js" />
+    <Content Include="Exercises\dom.html" />
+    <Content Include="Exercises\dom.js" />
+    <Content Include="Exercises\face2.jpg" />
+    <Content Include="Exercises\functions.js" />
+    <Content Include="Exercises\handling_events_ballon.html" />
+    <Content Include="Exercises\handling_events_tabs.html" />
+    <Content Include="Exercises\higher_order_functions.js" />
+    <Content Include="Exercises\index.html" />
+    <Content Include="Exercises\handling_events_mouse_trail.html" />
+    <Content Include="Exercises\pear.jpg" />
+    <Content Include="Exercises\program_structure.js" />
+    <Content Include="Exercises\regular_expressions.js" />
+    <Content Include="Exercises\secret_life_of_objects.js" />
+    <Content Include="Project-Programming-Language\programming-language.js" />
+    <Content Include="Project-Programming-Language\programming_language.html" />
+    <Content Include="Project-Robot\project.js" />
+    <Content Include="Project-Robot\robot.html" />
+    <Content Include="RefvsValue\deep_shallow_copy.js" />
+    <Content Include="TrickyJSQuestions\tricky.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\08\8eec06c0cbdefd48540b4f7337252376659cfe" />
+    <None Include=".git\objects\10\5a8c645f15a2f49101495da64b2a91368f45f5" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\30\9edd18d81fd44b915d9a9807ae190831708c65" />
+    <None Include=".git\objects\35\e9f10542f0da96379c55528c6bb8b10aa2c940" />
+    <None Include=".git\objects\3b\d68cb3edd5f0760a4c37ad0a5ce01e7ec6dc5b" />
+    <None Include=".git\objects\3e\30eb487bbc20e458666f1dc1aaf840fa41c612" />
+    <None Include=".git\objects\4c\e6fddec962ff3b86038d9939b6be5dfc1e6351" />
+    <None Include=".git\objects\6a\97c6729d4013cd863999e3919f80b0ebad6969" />
+    <None Include=".git\objects\70\a5a4a551dc67c8b98fb4375c9e3e6b24832fd4" />
+    <None Include=".git\objects\79\2090e114e2d9df44f8353d90ff9174ddab6f53" />
+    <None Include=".git\objects\81\ff8b09f047dbc04d5cf639e066f0fd913930c4" />
+    <None Include=".git\objects\86\f5f1bb0076c70391998a0e7d350b18f91c905c" />
+    <None Include=".git\objects\8b\60838835ecd7c3584ca8698bac0bcfd2361838" />
+    <None Include=".git\objects\a2\f31e001eeca6897ded60d9b3943650f2e4478b" />
+    <None Include=".git\objects\b2\d663fba989a4c8504cc0aa002d5565a150234c" />
+    <None Include=".git\objects\c3\30d6492b10fe627f7fe309721dcadb45237a67" />
+    <None Include=".git\objects\e4\8ea33886c588a77cc5536a0897f71d9deb7d87" />
+    <None Include=".git\objects\ff\6939f8c86f8892b1ac19eb180133dafe184185" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\EloquentJS\config\applicationhost.config" />
+    <None Include=".vs\EloquentJS\v16\.suo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

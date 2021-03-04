@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎈🎈🎈</title>
+
+    <style>
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baloon{
+            font-size: 10px;
+        }
+        .message{
+            display: none;
+            font-size: 4rem;
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="baloon">
+            🎈
+        </div>
+        <p class="message">You fucked up the ballon you bastard! lol</p>
+    </div>
+    
+
+    <script>
+        let el = document.querySelector('.baloon');
+        let message = document.querySelector('.message');
+        let style = window.getComputedStyle(el, null).getPropertyValue('font-size');
+        let fontSize = parseFloat(style); 
+        console.log(message);
+        function changeSize(e) {
+            e.preventDefault();
+            if (e.code === 'ArrowUp') {
+                fontSize = fontSize + (fontSize * 0.1);
+                el.style.fontSize = fontSize + 'px';
+            }
+            else if (e.code === 'ArrowDown') {
+                fontSize = fontSize - (fontSize * 0.1);
+                el.style.fontSize = fontSize + 'px';
+            }
+            if (fontSize > 600) {
+                el.textContent = '';
+                el.innerHTML = '💥';
+                message.style.display = 'block';
+                document.removeEventListener('keydown', changeSize);
+            }
+        }
+        document.addEventListener('keydown', changeSize);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse trail</title>
+    <style>
+        .trail { /* className for the trail elements */
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            border-radius: 3px;
+            background: teal;
+        }
+
+        body {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+
+<script>
+    let dots = [];
+    let radius = 3;
+    function addToTrail(x, y) {
+        let dot = document.createElement('div');
+        dot.className = 'trail';
+        dot.style.left = x - radius + 'px';
+        dot.style.top = y - radius + 'px';
+        document.body.appendChild(dot);
+        dots.push(dot);
+        setTimeout(removeFromTrail, 1000);
+    };
+    function removeFromTrail() {
+        document.body.removeChild(dots.shift());
+    };
+    function mouseTrail(e) {
+        addToTrail(e.pageX, e.pageY);
+    };
+    document.addEventListener('mousemove', mouseTrail);
+</script>
+</body>
+</html>
